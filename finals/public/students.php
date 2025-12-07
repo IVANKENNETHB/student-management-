@@ -1,6 +1,6 @@
 <?php
 require_once __DIR__ . '/../src/config.php';
-// basic CRUD for students
+// nandito na yung mga  basic CRUD for students
 $action = $_GET['action'] ?? '';
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
   if ($_POST['form'] === 'create') {
@@ -110,3 +110,4 @@ document.addEventListener('click', e=>{
 });
 document.getElementById('cancel').addEventListener('click', ()=>document.getElementById('editDialog').close());
 </script>
+
