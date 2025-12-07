@@ -52,7 +52,7 @@ dialog{border:0;background:var(--surface);border-radius:12px;padding:16px}
 .sidebar{position:sticky;top:0;height:100vh;overflow:auto}
 .fade-in{animation:fadeIn .26s ease-out both}
 @keyframes fadeIn{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:none}}
-/* notices (error / success) */
+
 .notice{padding:10px;border-radius:8px;margin-bottom:10px}
 .notice.error{background:#fff5f5;color:#9b1c1c;border:1px solid #ffd7d7}
 .notice.success{background:#f0fdf4;color:#065f46;border:1px solid #bbf7d0}
@@ -70,3 +70,4 @@ dialog{border:0;background:var(--surface);border-radius:12px;padding:16px}
   .schedule-grid{grid-template-columns:repeat(2,1fr)}
   .form-grid{grid-template-columns:1fr}
 }
+
