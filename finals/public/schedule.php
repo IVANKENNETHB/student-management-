@@ -7,7 +7,7 @@ if ($student_id) {
   $stmt = $pdo->prepare('SELECT c.* FROM courses c JOIN enrollments e ON e.course_id=c.id WHERE e.student_id=?');
   $stmt->execute([$student_id]);
   $courses = $stmt->fetchAll();
-  // convert to JS-friendly structure
+ 
   foreach($courses as $c) {
     $days = array_map('trim', explode(',', $c['day_set']));
     foreach($days as $d) {
@@ -57,3 +57,4 @@ if ($student_id) {
   </div>
 </body>
 </html>
+
