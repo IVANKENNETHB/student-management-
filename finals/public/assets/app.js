@@ -1,6 +1,6 @@
-// basic interactions
+
 console.log('App loaded');
-// progressive enhancement for dialogs
+
 document.addEventListener('click', e=>{
   const open = e.target.closest('[data-open-dialog]');
   if(open){
@@ -8,3 +8,4 @@ document.addEventListener('click', e=>{
     document.getElementById(id)?.showModal?.();
   }
 });
+
