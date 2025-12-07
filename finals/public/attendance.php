@@ -1,7 +1,7 @@
 <?php
 require_once __DIR__ . '/../src/config.php';
 $errors = [];
-// success flag from redirect
+
 $success = isset($_GET['success']) ? true : false;
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
   if ($_POST['form'] === 'timein') {
@@ -18,7 +18,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     }
   }
   if ($_POST['form'] === 'timeout') {
-    // Set time_out automatically on the server to the current datetime
+
     $id = $_POST['id'] ?? null;
     if (!$id) $errors[] = 'Missing attendance record id.';
     if (empty($errors)) {
@@ -141,3 +141,4 @@ $records = $records->fetchAll();
   </div>
 </body>
 </html>
+
